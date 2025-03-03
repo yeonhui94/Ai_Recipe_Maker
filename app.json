@@ -1,4 +1,7 @@
 {
   "name": "RecipeMaker",
-  "displayName": "RecipeMaker"
+  "displayName": "RecipeMaker",
+  "plugins": [
+    "expo-font"
+  ]
 }
