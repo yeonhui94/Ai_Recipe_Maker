@@ -1,29 +1,26 @@
+// Header.jsx
 import React from 'react';
-import { View, Text, StyleSheet, ActivityIndicator } from 'react-native';
+import { Text, View, StyleSheet } from 'react-native';
 
-
-const Header = ({ title }) => {
-
-    return (
-        <View style={styles.container}>
-            <Text style={styles.title}>{title}</Text>
-        </View>
-    );
-};
+export default function Header({fontStyle}) {
+  return (
+    <View style={styles.container}>
+      <Text style={[styles.text,  { fontStyle: fontStyle }]}>Recipe Maker</Text>
+    </View>
+  );
+}
 
 const styles = StyleSheet.create({
-    container: {
-        width: '100%',
-        padding: 30,
-        backgroundColor: '#ffff', // 헤더 배경 색상
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    title: {
-        fontSize: 30,
-        fontWeight: 'bold',
-        color: '#4CAF50', // 제목 텍스트 색상
-    },
-});
+  container: {
+    width : "100%",
+    height: 141,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  text: {
+    color: '#5F9809',
+    fontFamily: 'ABeeZee', // ✅ 올바른 속성명
+    fontSize: 40,
+  }
 
-export default Header;
+});

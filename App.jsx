@@ -1,22 +1,23 @@
-// src/App.js
 import React from 'react';
-import { SafeAreaView, StyleSheet } from 'react-native';
+import { SafeAreaView, StyleSheet} from 'react-native';
+import Intro from './src/pages/Intro';
+import Layout from './src/components/Layout';
 import Header from './src/components/Header';
 
 
-const App = () => {
+
+export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Header title="Recipe Maker" />
+      {/* <Layout></Layout> */}
+      <Intro></Intro>
+      {/* <Header></Header> */}
     </SafeAreaView>
   );
-};
+}
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-  },
-});
-
-export default App;
+const styles= StyleSheet.create({
+  container : {
+    flex : 1,
+  }
+})

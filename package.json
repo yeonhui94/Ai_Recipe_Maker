@@ -14,7 +14,8 @@
     "expo": "^52.0.37",
     "expo-font": "~13.0.4",
     "react": "19.0.0",
-    "react-native": "0.78.0"
+    "react-native": "0.78.0",
+    "react-native-vector-icons": "^10.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
