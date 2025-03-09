@@ -1,21 +1,24 @@
 import React from "react";
-import { View, StyleSheet, Image } from "react-native";
+import { View, StyleSheet, Image, Text, TouchableOpacity } from "react-native";
+import  Icon  from "react-native-vector-icons/FontAwesome";
+
 
 export default function Footer() {
+    const handlePress = (iconName) => {
+        console.log(`${iconName} clicked`);
+    };
+    
     return(
         <View style={styles.container}>
-            <Image 
-                source={require('../../assets/img/search.png')} // 로컬 이미지 경로
-                style={styles.icon}
-            />
-                        <Image 
-                source={require('../../assets/img/home.png')} // 로컬 이미지 경로
-                style={styles.icon}
-            />
-                        <Image 
-                source={require('../../assets/img/user.webp')} // 로컬 이미지 경로
-                style={styles.icon}
-            />
+            <TouchableOpacity onPress={() => handlePress("search")}>
+                <Icon style={styles.icon} name="search" />
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => handlePress("home")}>
+                <Icon style={styles.icon} name="home" />
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => handlePress("user")}>
+                <Icon style={styles.icon} name="user" />
+            </TouchableOpacity>
         </View>
     );
 }
@@ -23,14 +26,15 @@ export default function Footer() {
 const styles = StyleSheet.create({
     container: {
         display: "flex",
-        flexDirection: "row", // 가로로 정렬
-        justifyContent: "center", // 아이콘들을 가로로 균등하게 배치
-        padding: 10,
+        width: "100%",
+        paddingTop : 4,
+        flexDirection : "row",
+        gap : 4,
+        justifyContent : "center"
     },
-    icon :{
-        width : 60,
-        height :60,
-        backgroundColor: "white",
-        margin : 20
+    icon : {
+        padding : 40,
+        fontSize : 30,
+        color : "#2E251480"
     }
 });

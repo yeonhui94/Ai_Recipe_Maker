@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Layout from "../components/Layout";
 import { Image, StyleSheet, View } from "react-native";
 import Header from "../components/Header";
+import { useNavigation } from "@react-navigation/native";
 
 export default function Intro() {
+
+  const navigation = useNavigation();
+
+  useEffect(()=> {
+    const timer = setTimeout(()=>{
+      navigation.navigate("Search");
+    },2000);
+
+    return()=> clearTimeout(timer);
+  }, [navigation])
 
   return(
     <Layout>

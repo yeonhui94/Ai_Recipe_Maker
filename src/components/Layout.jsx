@@ -15,6 +15,7 @@ export default function Layout({ children }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor :"#FFFCF5"
   },
   circleBase: {
     position: "absolute",
