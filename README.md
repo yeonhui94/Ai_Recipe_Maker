@@ -22,4 +22,4 @@ AI Recipe Maker는 사용자가 냉장고에 있는 재료를 입력하면, 그�
 
 앱 실행 시 로딩 중 빈 화면 노출 문제를 해소하기 위해, 감각적이고 세련된 인트로 페이지를 도입하여 사용자에게 매력적인 첫 인상을 선사
 
-![maintosearch](https://github.com/user-attachments/assets/d461dfdd-6d74-4fa0-98b9-9a956494d188)
+![Image](https://github.com/user-attachments/assets/f016fa2b-50dc-4797-80ce-3be0096e3a63)
